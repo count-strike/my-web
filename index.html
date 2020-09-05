@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <title>Hello Coursera students! My name is ravi khandelwal!</title>
   </head>
   <body>
-    <h1>My Name is Sheela</h1>
+    <h1>Interest Calculator</h1>
+    <div ng-controller="MyFirstController">
+    <input type="number" ng-model="first" ng-keyup="add()">
+    <br><input type="number" ng-model="second" ng-keyup="add()">
+    <br> Interest is:: {{add()}}
+
+    </div>
   </body>
 </html>
